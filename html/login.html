@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyCling | Modern Fashion E-Commerce</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-logo">MyCling</div>
+            <h1 class="auth-title">Welcome Back</h1>
+            <p class="auth-subtitle">Login to your account to continue shopping</p>
+            
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                
+                <button type="submit" class="auth-btn">Login</button>
+                
+                <div class="auth-links">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                
+                <div class="social-login">
+                    <div class="social-login-title">Or login with</div>
+                    <div class="social-login-buttons">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i> Facebook
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="auth-links">
+                    Don't have an account? <a href="sign_up.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // Form Validation
+        const form = document.querySelector('.auth-form');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Simple email validation
+            if (!emailInput.value.includes('@')) {
+                emailInput.style.borderColor = '#FF6B6B';
+                isValid = false;
+            } else {
+                emailInput.style.borderColor = '';
+            }
+            
+            // Simple password validation
+            if (passwordInput.value.length < 6) {
+                passwordInput.style.borderColor = '#FF6B6B';
+                isValid = false;
+            } else {
+                passwordInput.style.borderColor = '';
+            }
+            
+            if (isValid) {
+                // Simulate login success
+                const authBtn = document.querySelector('.auth-btn');
+                authBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Logging in...';
+                
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1500);
+            }
+        });
+    </script>
+</body>
+</html>

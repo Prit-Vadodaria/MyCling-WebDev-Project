@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - MyCling | Modern Fashion E-Commerce</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">MyCling</div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="men.html"><i class="fas fa-male"></i> Men</a></li>
+                <li><a href="women.html"><i class="fas fa-female"></i> Women</a></li>
+                <li><a href="product.html"><i class="fas fa-tshirt"></i> Products</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i> Account</a></li>
+                <li>
+                    <div class="search-container">
+                        <input type="text" class="search-bar" placeholder="Search products..." />
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Product Details</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="product.html">Products</a> / <span>Premium Black Hoodie</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details-container">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <img src="../images/hoodie-black.png" alt="Premium Black Hoodie" class="main-image">
+                    <div class="thumbnail-container">
+                        <img src="../images/hoodie-black.png" alt="Black Hoodie Thumbnail" class="thumbnail active">
+                        <img src="../images/hoodie-green.png" alt="Green Hoodie Thumbnail" class="thumbnail">
+                        <img src="../images/hoodie-black.png" alt="Black Hoodie Back Thumbnail" class="thumbnail">
+                        <img src="../images/hoodie-black.png" alt="Black Hoodie Detail Thumbnail" class="thumbnail">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1>Premium Black Hoodie</h1>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(24 reviews)</span>
+                    </div>
+                    <p class="product-price">₹1,499</p>
+                    <div class="product-description">
+                        <p>Experience ultimate comfort with our Premium Black Hoodie. Made from high-quality cotton blend fabric, this hoodie features a modern fit, adjustable hood, and convenient front pocket. Perfect for casual outings or lounging at home.</p>
+                    </div>
+
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span class="meta-value">BH-1001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Availability:</span>
+                            <span class="meta-value">In Stock (12 items)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span class="meta-value">Hoodies, Men's Wear</span>
+                        </div>
+                    </div>
+
+                    <div class="product-options">
+                        <h3>Color:</h3>
+                        <div class="color-options">
+                            <div class="color-option active" style="background-color: #000000;" data-color="Black"></div>
+                            <div class="color-option" style="background-color: #2E8B57;" data-color="Green"></div>
+                            <div class="color-option" style="background-color: #4169E1;" data-color="Blue"></div>
+                            <div class="color-option" style="background-color: #8B4513;" data-color="Brown"></div>
+                        </div>
+
+                        <h3>Size:</h3>
+                        <div class="size-options">
+                            <div class="size-option">S</div>
+                            <div class="size-option active">M</div>
+                            <div class="size-option">L</div>
+                            <div class="size-option">XL</div>
+                            <div class="size-option">XXL</div>
+                        </div>
+
+                        <h3>Quantity:</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-large"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                    <button class="wishlist-btn"><i class="far fa-heart"></i> Add to Wishlist</button>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="description">Description</button>
+                    <button class="tab-button" data-tab="specifications">Specifications</button>
+                    <button class="tab-button" data-tab="reviews">Reviews (24)</button>
+                </div>
+
+                <div class="tab-content active" id="description">
+                    <h3>Product Description</h3>
+                    <p>Our Premium Black Hoodie is designed for both style and comfort. The soft cotton blend fabric ensures warmth while maintaining breathability, making it perfect for year-round wear.</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li>Premium cotton blend (80% cotton, 20% polyester)</li>
+                        <li>Adjustable drawstring hood</li>
+                        <li>Kangaroo pocket for convenience</li>
+                        <li>Ribbed cuffs and hem for a secure fit</li>
+                        <li>Machine washable</li>
+                    </ul>
+                    <p>This versatile hoodie pairs perfectly with jeans, joggers, or shorts for a casual yet stylish look. Available in multiple colors and sizes to suit your personal style.</p>
+                </div>
+
+                <div class="tab-content" id="specifications">
+                    <h3>Product Specifications</h3>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Material</td>
+                            <td>80% Cotton, 20% Polyester</td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td>350 GSM</td>
+                        </tr>
+                        <tr>
+                            <td>Fit</td>
+                            <td>Regular</td>
+                        </tr>
+                        <tr>
+                            <td>Closure</td>
+                            <td>Full front zipper</td>
+                        </tr>
+                        <tr>
+                            <td>Pockets</td>
+                            <td>1 kangaroo pocket</td>
+                        </tr>
+                        <tr>
+                            <td>Care Instructions</td>
+                            <td>Machine wash cold, tumble dry low</td>
+                        </tr>
+                        <tr>
+                            <td>Country of Origin</td>
+                            <td>India</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tab-content" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <span class="rating-number">4.5</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="total-reviews">Based on 24 reviews</span>
+                        </div>
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span>5 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 70%;"></div>
+                                </div>
+                                <span>70%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 20%;"></div>
+                                </div>
+                                <span>20%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 5%;"></div>
+                                </div>
+                                <span>5%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 Stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 3%;"></div>
+                                </div>
+                                <span>3%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 Star</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 2%;"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="customer-reviews">
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="../images/avatar1.jpg" alt="Reviewer" class="reviewer-avatar">
+                                <div>
+                                    <h4>Rahul Sharma</h4>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="review-date">June 12, 2023</span>
+                                </div>
+                            </div>
+                            <p class="review-text">Absolutely love this hoodie! The material is super comfortable and the fit is perfect. I've been wearing it almost every day since I got it. Highly recommend!</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="../images/avatar2.jpg" alt="Reviewer" class="reviewer-avatar">
+                                <div>
+                                    <h4>Priya Patel</h4>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="review-date">May 28, 2023</span>
+                                </div>
+                            </div>
+                            <p class="review-text">Great quality hoodie for the price. The material is thick and warm, perfect for winter. The only reason I'm giving 4 stars is because the sizing runs a bit large. I would recommend sizing down.</p>
+                        </div>
+                    </div>
+
+                    <button class="load-more-reviews">Load More Reviews</button>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="product-carousel">
+                    <div class="product-card">
+                        <a href="product-details.html">
+                            <img src="../images/hoodie-green.png" alt="Green Hoodie">
+                            <h3>Casual Green Hoodie</h3>
+                            <p class="product-price">₹1,299</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="product-details.html">
+                            <img src="../images/hoodie-black.png" alt="Black Hoodie">
+                            <h3>Winter Hoodie</h3>
+                            <p class="product-price">₹1,799</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="product-details.html">
+                            <img src="../images/hoodie-black.png" alt="Black Hoodie">
+                            <h3>Stylish Hoodie</h3>
+                            <p class="product-price">₹1,399</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="product-details.html">
+                            <img src="../images/hoodie-black.png" alt="Black Hoodie">
+                            <h3>Premium Hoodie</h3>
+                            <p class="product-price">₹1,599</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get updates on new arrivals, special offers and more</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+        <div class="footer-logo">MyCling</div>
+                    <p>Your one-stop destination for trendy and comfortable clothing.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="men.html">Men</a></li>
+                        <li><a href="women.html">Women</a></li>
+                        <li><a href="product.html">Products</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+        <div class="footer-info">
+                        <div class="contact">+123 456 7890</div>
+                        <div class="email">support@mycling.com</div>
+                        <div class="insta">@my_cling</div>
+                        <div class="address">123 Fashion Street, Design City</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                Copyright &copy; MyCling 2025. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('nav ul');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Animation on Scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+                
+                if (elementPosition < screenPosition) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+        
+        // Product Image Gallery
+        const mainImage = document.querySelector('.main-image');
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                // Update main image
+                mainImage.src = thumbnail.src;
+                
+                // Update active thumbnail
+                thumbnails.forEach(thumb => thumb.classList.remove('active'));
+                thumbnail.classList.add('active');
+            });
+        });
+        
+        // Color Options
+        const colorOptions = document.querySelectorAll('.color-option');
+        
+        colorOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                colorOptions.forEach(opt => opt.classList.remove('active'));
+                option.classList.add('active');
+            });
+        });
+        
+        // Size Options
+        const sizeOptions = document.querySelectorAll('.size-option');
+        
+        sizeOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                sizeOptions.forEach(opt => opt.classList.remove('active'));
+                option.classList.add('active');
+            });
+        });
+        
+        // Quantity Selector
+        const quantityInput = document.querySelector('.quantity-input');
+        const minusBtn = document.querySelector('.minus');
+        const plusBtn = document.querySelector('.plus');
+        
+        minusBtn.addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            if (value > 1) {
+                quantityInput.value = value - 1;
+            }
+        });
+        
+        plusBtn.addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            quantityInput.value = value + 1;
+        });
+        
+        // Product Tabs
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+                
+                // Update active tab button
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Update active tab content
+                tabContents.forEach(content => content.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Add to Cart Button
+        const addToCartBtn = document.querySelector('.add-to-cart-large');
+        
+        addToCartBtn.addEventListener('click', () => {
+            const originalText = addToCartBtn.innerHTML;
+            addToCartBtn.innerHTML = '<i class="fas fa-check"></i> Added to Cart';
+            
+            setTimeout(() => {
+                addToCartBtn.innerHTML = originalText;
+            }, 2000);
+        });
+        
+        // Wishlist Button
+        const wishlistBtn = document.querySelector('.wishlist-btn');
+        
+        wishlistBtn.addEventListener('click', () => {
+            const heartIcon = wishlistBtn.querySelector('i');
+            
+            if (heartIcon.classList.contains('far')) {
+                heartIcon.classList.remove('far');
+                heartIcon.classList.add('fas');
+                heartIcon.style.color = '#FF6B6B';
+            } else {
+                heartIcon.classList.remove('fas');
+                heartIcon.classList.add('far');
+                heartIcon.style.color = '';
+            }
+        });
+    </script>
+</body>
+</html>

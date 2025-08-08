@@ -1,0 +1,1239 @@
+/* Merged CSS file: form.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a1b4d, #3d0e26);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6a1b4d;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #3d0e26;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #3d0e26;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #6a1b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* --- Content from style.css --- */
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff4081;
+}
+
+/* Banner Styles */
+.men-banner, .women-banner, .category-banner {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff4081, #9c27b0);
+}
+
+/* Product Section */
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ff4081;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.shop-now {
+    background: #ff4081;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.shop-now:hover {
+    background: #9c27b0;
+}
+
+/* Product Details Page */
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.product-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.product-details {
+    max-width: 500px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+.buttons button {
+    background: #ff4081;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #9c27b0;
+}
+
+/* Customer Reviews */
+.reviews {
+    padding: 30px;
+    text-align: center;
+}
+
+.review {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(255, 64, 129, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* --- Content from styles.css --- */
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Ahganirya';
+    src: url('AhganiryaPersonalUse-Yznaj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bellagia';
+    src: url('BellagiaDisplayThin-x32Mj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'California';
+    src: url('California.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Destine';
+    src: url('DestinePersonalUseRegular-6YAev.otf') format('truetype');
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: transparent;
+    position: relative;
+}
+
+/* Navbar Container (Includes Search Bar) */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Navigation List */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+/* Navigation Items */
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Navigation Links */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+/* Icons and Text Same Size */
+nav ul li a i {
+    font-size: 18px;
+    color: black;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 200px;
+    height: 35px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Shop Now Button */
+.shop-now {
+    background: #FBEAD9;
+    padding: 15px 30px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    position: relative;
+    bottom: 100px;
+}
+
+.shop-now:hover {
+    transform: scale(1.05);
+}
+
+/* Models */
+.left-model, .right-model {
+    height: 80vh;
+    position: absolute;
+}
+
+.left-model {
+    left: 0%;
+}
+
+.right-model {
+    right: 0%;
+}
+
+
+
+/* Logo Styling */
+.logoname {
+    font-size: 82pt;
+    font-family: 'Ahganirya', sans-serif;
+    color: white;
+}
+
+/*footer*/
+footer{
+        background-color: black;
+        width: 100%;
+        height: 226px;
+        color: white;
+}
+
+.footer-logo{
+    font-family: 'Ahganirya', sans-serif;
+    font-size: 25pt;
+    text-align: center;
+    left: 10px;
+}
+
+.copyright{
+    position: relative;
+    text-align: center;
+    bottom: -12px;
+}
+
+.footer-info{
+    position: relative;
+    padding-left: 10px;
+    text-align: center;
+}
+
+/* AI Upload Section */
+/* AI Upload Section */
+.ai_upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background: radial-gradient(76.88% 76.88% at 38.44% 38.44%, #7D4354 0%, #5A2A38 100%);
+    padding: 20px;
+}
+
+.upload-title {
+    font-size: 42px;
+    font-family: 'Ahganirya', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Upload Box */
+.upload-box {
+    width: 350px;
+    height: 350px;
+    background: #FBEAD9;
+    border-radius: 20px;
+    border: 2px dotted black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hidden File Input */
+input[type="file"] {
+    display: none;
+}
+
+/* Upload Button */
+.upload-btn {
+    background: #003cff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Upload Button Hover */
+.upload-btn:hover {
+    background: #0026b3;
+    transform: scale(1.05);
+}
+.upload-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/*infromation beside ai*/
+.info-box{
+    width: 350px;
+    height: 350px;
+    background: transparent;
+    align-content: center;
+    position: relative;
+}
+
+.info-text {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.appointment-btn {
+    background: #003cff;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    
+    /* Center Align */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Centers the button inside the div */
+    width: fit-content; /* Adjust width based on content */
+}
+
+
+.appointment-btn:hover {
+    background: #0026b3;
+}
+
+
+
+
+/*section1*/
+
+/* General Section Styling */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    height: 1175px;
+    position: relative;
+    background-color: white;
+}
+
+/* Left Card: Special Offer Hoodies */
+.left-card {
+    background: linear-gradient(to bottom, #b88d4f, #85642e);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    height: 600px;
+    width: 400px;
+    position: relative;
+}
+
+.left-card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+/* Hoodies Overlapping */
+/* Container to hold both images */
+.image-container {
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+}
+
+/* General styling for both images */
+/* Container to hold both images */
+.image-container {
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden; /* Prevents images from overflowing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General styling for both images */
+.image-container img {
+    position: absolute;
+    width: 90%; /* Adjust to ensure images fit */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Black Hoodie Styling */
+.black-hoodie {
+    /* z-index: 2; Bring it to the front */
+    left: 50%;  /* Centering the image */
+    top: 50%;
+    transform: translate(-40%, -50%) rotate(10deg);
+}
+
+/* Green Hoodie Styling */
+.green-hoodie {
+    /* z-index: 1; Place it behind the black hoodie */
+    left: 50%; 
+    top: 50%;
+    transform: translate(-60%, -50%) rotate(-10deg);
+}
+
+/* Explore Button */
+.explore-btn {
+    background: #5a1d48;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 88px;
+    transform: scale(1.6);
+    z-index: 100;
+}
+.discount-tape{
+    z-index: 3;
+}
+
+/* Right Side: Coming Soon */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.coming-soon-shoes {
+    background-image: url(child-with-jeans-white-sneakers.png);
+    background-size: cover;
+    background-position: center bottom; /* Move image up */
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    height: 285px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Push text to the bottom */
+    background-color: #091840;
+    color: #7197ff;
+    font-family: 'California' serif;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.coming-soon-shoes .text {
+    padding-bottom: 15px; /* Adjust space below text */
+}
+
+
+
+.coming-soon-ethnics {
+    background-image: url(ethnic.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    height: 285px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Moves content to the bottom */
+    margin-bottom: 15px;
+    color: white;
+    font-family: 'Bellagia', sans-serif;
+    font-size: 32pt;
+}
+
+/* Bottom Product Carousel */
+.product-carousel {
+    display: flex;
+    gap: 10px;
+}
+
+.product-card {
+    background: #b88d4f;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    width: 359px;
+    height: 450px;
+}
+.product-card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.discountsandcoomingsoon{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Additional CSS for Products Page */
+
+/* Styling for the collection section */
+.collection-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.collection-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Product grid layout */
+.collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Styling for product cards */
+.collection-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+}
+
+.collection-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.collection-item h3 {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Hover effects */
+.collection-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Content from appointment.css --- */
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Ahganirya';
+    src: url('AhganiryaPersonalUse-Yznaj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bellagia';
+    src: url('BellagiaDisplayThin-x32Mj.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'California';
+    src: url('California.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Destine';
+    src: url('DestinePersonalUseRegular-6YAev.otf') format('truetype');
+}
+
+
+/* Form Styling */
+/* Appointment Form Styling */
+/* Appointment Form Styling */
+/* Center Form on Page */
+body {
+    background: linear-gradient(135deg, #6a1b4d, #3d0e26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Ensure it remains centered */
+.form-container {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+/* Form Heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: 'Ahganirya', sans-serif;
+    color: #5A2A38;
+}
+
+/* Labels */
+.form-container label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Input & Select Fields */
+.form-container input,
+.form-container select {
+    width: calc(100% - 20px); /* Adjusting width to fit inside form */
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #5A2A38;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #FBEAD9;
+    outline: none;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Input Focus Effect */
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #003cff;
+    background: #fff;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #003cff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+    background: #0026a7;
+    transform: scale(1.05);
+}
+/* --- Content from login.css --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a1b4d, #3d0e26);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6a1b4d;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #3d0e26;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d0e26;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #6a1b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Content from signup.css --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a1b4d, #3d0e26);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6a1b4d;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #3d0e26;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #3d0e26;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #6a1b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a1b4d, #3d0e26);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6a1b4d;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #3d0e26;
+}
+
+p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b4d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #3d0e26;
+}
+
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #6a1b4d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
