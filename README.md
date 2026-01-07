@@ -124,3 +124,5 @@ cd My-cling-WebDevelopment-project-main
 ## 👤 Author
 Developed by **Prit Vadodaria**  & **Shubham Mistry**
 📧 *pritvadodaria16@gmail.com*
+github - *@Prit-Vadodaria*
+
